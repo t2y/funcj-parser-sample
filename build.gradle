@@ -10,21 +10,21 @@ version = '0.5.0'
 
 dependencies {
     // for type inference
-    annotationProcessor 'org.projectlombok:lombok:1.18.2'
-    compileOnly 'org.projectlombok:lombok:1.18.2'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.2'
-    testCompileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.8'
+    testCompileOnly 'org.projectlombok:lombok:1.18.8'
 
     // for logging
-    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.11'
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.22'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
 
     // for parser
-    compile group: 'org.typemeta', name: 'funcj-parser', version: '0.6.9'
+    compile group: 'org.typemeta', name: 'funcj-parser', version: '0.6.15'
+    api 'org.apache.commons:commons-math3:3.6.1'
 
     // gradle use
-    api 'org.apache.commons:commons-math3:3.6.1'
-    implementation 'com.google.guava:guava:26.0-jre'
+    implementation 'com.google.guava:guava:28.0-jre'
 
     // for testing
     testImplementation 'junit:junit:4.12'
